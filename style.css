@@ -58,6 +58,40 @@ body {
     justify-content: space-around;
   }
 }
+
+.header-background {
+  border-radius: 15px;
+  background-image: url('Images/Group 13 (1) (1).png');
+
+  width: 100%;
+  min-height: 400px;
+  padding: 0 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+.text-header {
+  padding-top: 130px;
+}
+.input-on-background {
+  display: block;
+  padding: 0.5rem;
+  background-color: hsla(0, 1%, 43%, 0.087);
+  border-radius: 9x;
+}
+/* header section responsive */
+@media screen and (max-width: 600px) {
+  .header-background {
+    width: 10rem;
+    height: 100%;
+  }
+  .text-header {
+    padding-top: 90px;
+  }
+  .input-on-background {
+    padding-bottom: 20px;
+  }
+}
+
 /* main section1 styles start here */
 
 .destination-title {
@@ -97,8 +131,7 @@ body {
   .row {
     display: grid;
     grid-template-columns: 1fr;
-    /* max-width: 600px; */
-    /* max-height: 300px; */
+
     height: auto;
     width: auto;
   }
