@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
 body {
+  /* max-width: 1440px; */
   font-family: 'Mulish', sans-serif;
   background-color: rgb(248, 248, 255);
+  /* padding: 4.00rem 4.00rem; */
 }
 
 /* nav styles */
 
 nav {
-  max-width: 1170px;
-  max-height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 130px;
 }
 nav img {
   width: 45px;
@@ -43,12 +42,257 @@ nav ul a {
   color: #424247;
 }
 
-/* Responsive navbar */
+/* header banner styles */
+.header-section {
+  background-image: url('Images/Group 13 (1) (1).png');
+  background-repeat: no-repeat;
+  height: 25rem;
+  border-radius: 16px;
+  width: 60rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+.explore {
+  color: #fff;
+}
+
+.input {
+  width: 10rem;
+  height: 2.1rem;
+  border-radius: 8px;
+}
+.select {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 8px;
+}
+.button {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #ff5400;
+}
+
+/* main section 1 styles */
+.main-section1 {
+  display: flex;
+  gap: 1rem;
+}
+.section1-left {
+  display: inline;
+}
+.section1-img {
+  margin: 0;
+  width: 450px;
+  height: 450px;
+  float: left;
+}
+.section1-header {
+  margin: 0;
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.section1-description {
+  color: #5a5a5d;
+  font-weight: 400;
+}
+.section1-button {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 15px 35px;
+  margin: 0;
+  background-color: #ff5400;
+  border-radius: 8px;
+  border: 0;
+}
+
+/* main section2 styles */
+.main-section2 {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border: 2px solid;
+}
+.section2-header {
+  color: #131318;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0;
+}
+.section2-p {
+  color: rgb(19, 19, 24, 0, 70);
+  font-weight: 400;
+  text-align: center;
+}
+.choose {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* section3 styles */
+.two-card-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  align-items: center;
+}
+.card-1 img {
+  width: 6rem;
+  height: 5.5rem;
+}
+.card-1 {
+  width: 35.62rem;
+  height: 17.5rem;
+  background-color: rgb(251, 181, 99, 0.05);
+  border: 1px solid rgb(251, 181, 99, 0.2);
+  border-radius: 1rem;
+}
+.card-2 img {
+  width: 8rem;
+  height: 5.5rem;
+}
+.card-2 {
+  width: 35.62rem;
+  height: 17.5rem;
+  background-color: rgb(41, 206, 246, 0.05);
+  border: 1px solid rgb(41, 206, 246, 0.2);
+  border-radius: 1rem;
+}
+.card-3 img {
+  width: 8rem;
+  height: 6rem;
+}
+.card-3 {
+  width: 35.62rem;
+  height: 17.5rem;
+  background-color: rgb(233, 68, 68, 0.05);
+  border: 1px solid rgb(233, 68, 68, 0.2rem);
+  border-radius: 1rem;
+  padding: 0;
+  margin: 0 auto;
+}
+.section3 {
+  margin-top: 5.5rem;
+}
+.section3-header {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border: 2px solid;
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.section3-description {
+  text-align: center;
+  color: #5a5a5d;
+  font-weight: 400;
+}
+
+/* section4-styles */
+.section4 {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 5.5rem;
+}
+.section4-left {
+  width: 38rem;
+  height: 24rem;
+  border-radius: 1rem;
+}
+.section4-header {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.section4-p {
+  color: #5a5a5d;
+}
+.section4-ul {
+  color: #131318;
+  font-weight: 700;
+}
+.section4-button {
+  background-color: #ff5400;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.section4-video video {
+  width: 38rem;
+  height: 24rem;
+  border-radius: 1rem;
+  background: #676788;
+}
+
+/* section4 styles */
+.section5 {
+  margin-top: 7.5rem;
+  /* display: flex; */
+}
+.section5-form {
+  width: 38rem;
+  height: 24rem;
+  border: 1px solid #ff5400;
+  border-radius: 1rem;
+}
+.section5-header {
+  color: #131318;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.section5-caption {
+  margin-bottom: 1.5rem;
+}
+.section5-form input {
+  margin-top: 1rem;
+  border-radius: 8px;
+  color: rgb(19, 19, 24, 0.3);
+  width: 24rem;
+  height: 3rem;
+}
+.section5-button {
+  width: 24rem;
+  height: 3rem;
+  margin-top: 1rem;
+  background-color: #ff5400;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.section5-image {
+  width: 38rem;
+  height: 24rem;
+  border-radius: 1rem;
+}
+.discount-button button {
+  width: 20rem;
+  height: 7rem;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: #ff5400;
+}
+
+span {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
 @media screen and (max-width: 600px) {
   nav {
     flex-direction: column;
-    padding: 20px;
-    margin: 0 auto;
+    margin-bottom: 1.25rem;
   }
 }
 
