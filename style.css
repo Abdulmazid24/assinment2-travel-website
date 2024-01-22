@@ -48,7 +48,7 @@ nav ul a {
   background-repeat: no-repeat;
   height: 25rem;
   border-radius: 16px;
-  width: 60rem;
+  width: auto;
   padding-top: 10rem;
   text-align: center;
 }
@@ -113,7 +113,6 @@ nav ul a {
 .main-section2 {
   padding-top: 1rem;
   margin-top: 1rem;
-  border: 2px solid;
 }
 .section2-header {
   color: #131318;
@@ -182,7 +181,7 @@ nav ul a {
   text-align: center;
   padding: 0;
   margin: 0;
-  border: 2px solid;
+
   color: #131318;
   font-size: 1.5rem;
   font-weight: 800;
@@ -237,10 +236,12 @@ nav ul a {
 /* section4 styles */
 .section5 {
   margin-top: 7.5rem;
-  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 .section5-form {
-  width: 38rem;
+  width: 40rem;
   height: 24rem;
   border: 1px solid #ff5400;
   border-radius: 1rem;
@@ -262,7 +263,7 @@ nav ul a {
 }
 .section5-button {
   width: 24rem;
-  height: 3rem;
+  height: 3.5rem;
   margin-top: 1rem;
   background-color: #ff5400;
   border-radius: 8px;
@@ -274,9 +275,16 @@ nav ul a {
   height: 24rem;
   border-radius: 1rem;
 }
-.discount-button button {
+.discount-button {
+  display: inline;
+  border: 2px solid;
+  position: relative;
+  top: -8rem;
+  left: 20rem;
+}
+.discount-button {
   width: 20rem;
-  height: 7rem;
+
   border-radius: 1rem;
   color: #fff;
   font-size: 1.5rem;
@@ -288,6 +296,46 @@ span {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 800;
+}
+
+/* footer styles */
+.footer-line1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-line1 img {
+  width: 2rem;
+  height: 2.6rem;
+  fill: #ff5400;
+  margin: 0;
+  padding: 0;
+}
+.footer-header {
+  color: #131318;
+  font-size: 2.02rem;
+  font-weight: 800;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.footer-span {
+  font-size: 2.02rem;
+  font-weight: 800;
+  color: #ff5400;
+}
+.footer-p {
+  text-align: center;
+}
+.footer-resource {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.last-in-page {
+  text-align: center;
+  margin-top: 2rem;
 }
 @media screen and (max-width: 600px) {
   nav {
